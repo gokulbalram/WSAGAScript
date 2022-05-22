@@ -149,9 +149,9 @@ find $MountPointProduct/priv-app -type f -exec chcon --reference=$MountPointProd
 
 echo "Applying SELinux security contexts to props"
 chcon --reference=$MountPointSystem/system/etc $MountPointSystem/system/build.prop
-chcon --reference=$MountPointSystemExt/etc $MountPointSystemExt/build.prop
+chcon --reference=$MountPointSystemExt/etc $MountPointSystemExt/etc/build.prop
 chcon --reference=$MountPointProduct/etc $MountPointProduct/etc/build.prop
-chcon --reference=$MountPointVendor/etc $MountPointVendor/etc/build.prop
+chcon --reference=$MountPointVendor/etc $MountPointVendor/build.prop
 
 echo "Applying SELinux policy"
 SELinuxPolicy="(allow gmscore_app self (vsock_socket (read write create connect)))"
