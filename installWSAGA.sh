@@ -18,7 +18,7 @@ done
 echo GApps found!
 
 rm -rf WSAGAScript/ #cleanup from previous installation
-git clone https://github.com/WSA-Community/WSAGAScript
+git clone https://github.com/gokulbalram/WSAGAScript
 mkdir WSAGAScript/#MSIX
 
 while true; do
